@@ -1,0 +1,76 @@
+.allgroceries_Container{
+  /* position: absolute;
+  margin-top: 110px;
+  overflow: hidden;
+  padding: 0 10px; */
+  overflow: hidden; /* Hide scrollbars */
+  min-height: 80vh;
+  padding: 20px;
+  width: 100%;
+}
+.allgroceries{
+    /* display: flex;
+    justify-content:flex-start; */
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 30px;
+    padding: 20px 0px;
+    max-width: 1800px;
+    
+}
+
+.allProductSearch{
+  width: 425px;
+  border-radius: 5px;
+  border: solid 1px rgb(125, 185, 125);
+  font-size: 1rem;
+  outline:none;
+  padding: 5px;
+  text-indent: 10px;
+  background:none;
+  transition: all ease 500ms;
+}
+
+.allProductSearch:focus{
+  outline: solid 1px rgb(0, 115, 4);
+}
+
+
+@media (max-width: 1500px) {
+
+  .allgroceries{
+    grid-template-columns: repeat(9,1fr);
+    gap: 20px;  
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .allgroceries{
+    grid-template-columns: repeat(8,1fr);
+    gap: 15px;  
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .allgroceries{
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;  
+  }
+}
+
+@media (max-width: 800px) {
+
+  .allgroceries{
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;  
+  }
+}
+@media (max-width: 600px) {
+
+  .allgroceries{
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;  
+  }
+}

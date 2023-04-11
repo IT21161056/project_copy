@@ -1,0 +1,29 @@
+.carousel_component {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    object-fit: fill;
+}
+
+.home_container{
+    width: 100%;
+}
+
+.boxred{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#loadingAnimation_home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: #000000;
+}
